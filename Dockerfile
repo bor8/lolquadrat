@@ -1,6 +1,5 @@
 FROM busybox:latest
 ARG BASE=/opt/hihi
-RUN echo 'before file1:' && cat ${BASE}/config/thatfile.yml || true
 
 # Your code 1:
 COPY docker/config/file1.yml $BASE/config/thatfile.yml
